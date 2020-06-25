@@ -32,5 +32,14 @@ feature 'User can sign up' do
         click_on 'Create'
         expect(page).to have_content 'Email has already been taken'
     end
+    it 'name can not be more than 10 characters' do 
+      fill_in 'Name', with: 'simaboreiri'
+      fill_in 'Email', with: 'example@example.com'
+      fill_in 'Password', with: 'password123'
+      fill_in 'Password confirmation', with: 'password123'
+      click_on 'Create'
+      expect(page).to have_content 'Name is too long (maximum is 10 characters)'
+    end
+    
     end
 end
