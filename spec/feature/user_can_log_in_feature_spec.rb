@@ -3,7 +3,7 @@ require "rails_helper"
 feature 'User can log in' do
     context 'Sign in to account'
     before do
-      create(:user, email: 'user@mail.com', password: '1234')  
+      create(:user, email: 'user@mail.com', password: '12345678')  
         visit user_session_path
 end
 
