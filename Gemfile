@@ -17,10 +17,8 @@ gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 
 group :development do
-  gem 'pry-byebug'
   gem 'spring'
   gem 'web-console', '~> 2.0'
-  gem 'capybara'
 end
 
 group :development, :test do
@@ -28,6 +26,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'factory_bot_rails'
+  gem 'pry-byebug'
 end
 
 group :production do

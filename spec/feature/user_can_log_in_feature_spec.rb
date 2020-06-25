@@ -17,9 +17,10 @@ it 'displays a email form' do
 end
 
 it 'fills in email and password' do
-    fill_in "Email", :with => "admin@admin.com"
-    fill_in "Password", :with => "password"
+    fill_in "Email", :with => 'user@mail.com'
+    fill_in "Password", :with => '12345678'
     click_on "Log in"
+        expect(page).to have_content 'Signed in successfully.'
 end
 
 
