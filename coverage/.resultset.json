@@ -31,10 +31,10 @@
       "/Users/odeanecroney/Documents/craft_academy/legacy_code_june_2020/app/helpers/application_helper.rb": [
         1,
         1,
-        2,
+        1,
         1,
         0,
-        1,
+        0,
         0,
         null,
         null,
@@ -75,7 +75,7 @@
         1,
         null,
         1,
-        9,
+        3,
         null,
         null
       ],
@@ -154,6 +154,6 @@
         0
       ]
     },
-    "timestamp": 1593088411
+    "timestamp": 1593093590
   }
 }
