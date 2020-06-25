@@ -44,16 +44,16 @@ feature 'User can sign up' do
     end
 
     it 'password must be at least eight character'do
-    fill_in 'Name', with: 'Pontus'
+      fill_in 'Name', with: 'Pontus'
       fill_in 'Email', with: 'example@example.com'
       fill_in 'Password', with: 'pass'
       fill_in 'Password confirmation', with: 'password123'
       click_on 'Create'
       expect(page).to have_content 'Password is too short (minimum is 8 characters)'
-  end
+    end
 
-  it 'password must match the password confirmation'do
-    fill_in 'Name', with: 'Pontus'
+    it 'password must match the password confirmation'do
+      fill_in 'Name', with: 'Pontus'
       fill_in 'Email', with: 'example@example.com'
       fill_in 'Password', with: 'password123'
       fill_in 'Password confirmation', with: 'password'
