@@ -32,6 +32,7 @@ feature 'User can sign up' do
         click_on 'Create'
         expect(page).to have_content 'Email has already been taken'
     end
+    
     it 'name can not be more than 10 characters' do 
       fill_in 'Name', with: 'simaboreiri'
       fill_in 'Email', with: 'example@example.com'
@@ -40,6 +41,7 @@ feature 'User can sign up' do
       click_on 'Create'
       expect(page).to have_content 'Name is too long (maximum is 10 characters)'
     end
+
     it 'password must be at least eight character'do
     fill_in 'Name', with: 'Pontus'
       fill_in 'Email', with: 'example@example.com'
@@ -47,8 +49,8 @@ feature 'User can sign up' do
       fill_in 'Password confirmation', with: 'password123'
       click_on 'Create'
       expect(page).to have_content 'Password is too short (minimum is 8 characters)'
-
   end
+
   it 'password must match the password confirmation'do
     fill_in 'Name', with: 'Pontus'
       fill_in 'Email', with: 'example@example.com'
@@ -56,7 +58,6 @@ feature 'User can sign up' do
       fill_in 'Password confirmation', with: 'password'
       click_on 'Create'
       expect(page).to have_content "Password confirmation doesn't match Password"
-
        end
     end
 end
