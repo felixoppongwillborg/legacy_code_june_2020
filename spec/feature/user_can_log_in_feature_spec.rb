@@ -7,28 +7,30 @@ feature 'User can log in' do
         visit user_session_path
 end
 
-it 'displays a log in button' do
-    expect(page).to have_content 'Login'
-    click_on 'Login'
+    it 'displays a log in button' do
+        expect(page).to have_content 'Login'
+        click_on 'Login'
+    end
+
+    it 'displays a email form' do
+        expect(page).to have_content 'Email'    
+    end
+
+    it 'fills in email and password' do
+        fill_in "Email", :with => 'user@mail.com'
+        fill_in "Password", :with => '12345678'
+        click_on "Log in"
+            expect(page).to have_content 'Signed in successfully.'
+    end
+
+    it 'If no email or password is entered' do
+    fill_in 'Email', :with => ''
+    fill_in 'Password', :with => ''
+    click_on 'Log in'
+        expect(page).to have_content 'Invalid Email or password.'
+    end
+
+
 end
 
-it 'displays a email form' do
-    expect(page).to have_content 'Email'    
-end
-
-it 'fills in email and password' do
-    fill_in "Email", :with => 'user@mail.com'
-    fill_in "Password", :with => '12345678'
-    click_on "Log in"
-        expect(page).to have_content 'Signed in successfully.'
-end
-
-
-end
-
-# it 'redirect user to ladning page' do
-#     expect(page).to have_content 'Signed in successfully.'
-# end
-
-# end
 
