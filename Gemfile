@@ -27,6 +27,7 @@ group :development, :test do
   gem 'capybara'
   gem 'factory_bot_rails'
   gem 'pry-byebug'
+  gem 'coveralls', require: false
 end
 
 group :production do
