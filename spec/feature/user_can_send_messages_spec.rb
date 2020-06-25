@@ -16,4 +16,10 @@ feature 'user can send messages' do
     it 'check if there is an inbox button' do
         expect(page).to have_content'Inbox'
     end
+
+    it 'click on inbox to compose message' do
+        click_on 'Inbox'
+        expect(page).to have_content 'Compose'
+        click_on 'Compose'
+    end
 end
