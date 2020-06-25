@@ -40,6 +40,15 @@ feature 'User can sign up' do
       click_on 'Create'
       expect(page).to have_content 'Name is too long (maximum is 10 characters)'
     end
-    
+    it 'password must be at least eight character'do
+    fill_in 'Name', with: 'Pontus'
+      fill_in 'Email', with: 'example@example.com'
+      fill_in 'Password', with: 'pass'
+      fill_in 'Password confirmation', with: 'password123'
+      click_on 'Create'
+      expect(page).to have_content 'Password is too short (minimum is 8 characters)'
+
+  end
+
     end
 end
