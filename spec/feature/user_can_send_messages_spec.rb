@@ -8,7 +8,7 @@ feature "user can send messages" do
             visit new_conversation_path
             select "Bigrat", from: "Recipients"
             fill_in "Subject", with: "Hej"
-            fill_in "Type your message here", with: "Hej då"
+            fill_in "Type your message here", with: "Hej test"
             click_on "Send Message"  
         end
 
@@ -18,7 +18,7 @@ feature "user can send messages" do
 
         it "message is visible in the sent messages section" do 
             visit mailbox_sent_path
-            expect(page).to have_content "Hej då"
+            expect(page).to have_content "Hej test"
         end
     end
 end
