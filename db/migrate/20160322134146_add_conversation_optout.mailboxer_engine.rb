@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # This migration comes from mailboxer_engine (originally 20131206080416)
+=======
+
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
 class AddConversationOptout < ActiveRecord::Migration[4.2]
   def self.up
     create_table :mailboxer_conversation_opt_outs do |t|

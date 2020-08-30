@@ -1,46 +1,54 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    actioncable (5.1.5)
-      actionpack (= 5.1.5)
+    actioncable (5.2.4.3)
+      actionpack (= 5.2.4.3)
       nio4r (~> 2.0)
-      websocket-driver (~> 0.6.1)
-    actionmailer (5.1.5)
-      actionpack (= 5.1.5)
-      actionview (= 5.1.5)
-      activejob (= 5.1.5)
+      websocket-driver (>= 0.6.1)
+    actionmailer (5.2.4.3)
+      actionpack (= 5.2.4.3)
+      actionview (= 5.2.4.3)
+      activejob (= 5.2.4.3)
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 2.0)
-    actionpack (5.1.5)
-      actionview (= 5.1.5)
-      activesupport (= 5.1.5)
-      rack (~> 2.0)
+    actionpack (5.2.4.3)
+      actionview (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
+      rack (~> 2.0, >= 2.0.8)
       rack-test (>= 0.6.3)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.1.5)
-      activesupport (= 5.1.5)
+    actionview (5.2.4.3)
+      activesupport (= 5.2.4.3)
       builder (~> 3.1)
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    activejob (5.1.5)
-      activesupport (= 5.1.5)
+    activejob (5.2.4.3)
+      activesupport (= 5.2.4.3)
       globalid (>= 0.3.6)
-    activemodel (5.1.5)
-      activesupport (= 5.1.5)
-    activerecord (5.1.5)
-      activemodel (= 5.1.5)
-      activesupport (= 5.1.5)
-      arel (~> 8.0)
-    activesupport (5.1.5)
+    activemodel (5.2.4.3)
+      activesupport (= 5.2.4.3)
+    activerecord (5.2.4.3)
+      activemodel (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
+      arel (>= 9.0)
+    activestorage (5.2.4.3)
+      actionpack (= 5.2.4.3)
+      activerecord (= 5.2.4.3)
+      marcel (~> 0.3.1)
+    activesupport (5.2.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (~> 0.7)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
+<<<<<<< HEAD
     arel (8.0.0)
+=======
+    arel (9.0.0)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     autoprefixer-rails (9.8.4)
       execjs
     bcrypt (3.1.13)
@@ -71,14 +79,27 @@ GEM
       railties (>= 3.0)
       sassc-rails (>= 2.1.2)
     coderay (1.1.3)
+<<<<<<< HEAD
     coffee-rails (4.2.2)
+=======
+    coffee-rails (5.0.0)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
       coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
+      railties (>= 5.2.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
+<<<<<<< HEAD
+=======
+    coveralls (0.8.23)
+      json (>= 1.8, < 3)
+      simplecov (~> 0.16.1)
+      term-ansicolor (~> 1.3)
+      thor (>= 0.19.4, < 2.0)
+      tins (~> 1.6)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     crass (1.0.6)
     debug_inspector (0.0.3)
     devise (4.7.2)
@@ -88,12 +109,23 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.4.2)
+<<<<<<< HEAD
     erubi (1.9.0)
     execjs (2.7.0)
+=======
+    docile (1.3.2)
+    erubi (1.9.0)
+    execjs (2.7.0)
+    factory_bot (6.0.2)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.0.0)
+      factory_bot (~> 6.0.0)
+      railties (>= 5.0.0)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     ffi (1.13.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
-    i18n (0.9.5)
+    i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     image_processing (1.11.0)
       mini_magick (>= 4.9.5, < 5)
@@ -104,6 +136,10 @@ GEM
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+<<<<<<< HEAD
+=======
+    json (2.3.0)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -112,6 +148,11 @@ GEM
     mailboxer (0.15.1)
       carrierwave (>= 0.5.8)
       rails (>= 5.0.0)
+<<<<<<< HEAD
+=======
+    marcel (0.3.3)
+      mimemagic (~> 0.3.2)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_magick (4.10.1)
@@ -134,17 +175,18 @@ GEM
     rack (2.2.3)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rails (5.1.5)
-      actioncable (= 5.1.5)
-      actionmailer (= 5.1.5)
-      actionpack (= 5.1.5)
-      actionview (= 5.1.5)
-      activejob (= 5.1.5)
-      activemodel (= 5.1.5)
-      activerecord (= 5.1.5)
-      activesupport (= 5.1.5)
+    rails (5.2.4.3)
+      actioncable (= 5.2.4.3)
+      actionmailer (= 5.2.4.3)
+      actionpack (= 5.2.4.3)
+      actionview (= 5.2.4.3)
+      activejob (= 5.2.4.3)
+      activemodel (= 5.2.4.3)
+      activerecord (= 5.2.4.3)
+      activestorage (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
       bundler (>= 1.3.0)
-      railties (= 5.1.5)
+      railties (= 5.2.4.3)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
@@ -156,12 +198,12 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
-    railties (5.1.5)
-      actionpack (= 5.1.5)
-      activesupport (= 5.1.5)
+    railties (5.2.4.3)
+      actionpack (= 5.2.4.3)
+      activesupport (= 5.2.4.3)
       method_source
       rake (>= 0.8.7)
-      thor (>= 0.18.1, < 2.0)
+      thor (>= 0.19.0, < 2.0)
     rake (11.3.0)
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
@@ -194,8 +236,8 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sass-rails (5.0.7)
-      railties (>= 4.0.0, < 6)
+    sass-rails (5.1.0)
+      railties (>= 5.2.0)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -208,6 +250,16 @@ GEM
       sprockets (> 3.0)
       sprockets-rails
       tilt
+<<<<<<< HEAD
+=======
+    shoulda-matchers (4.3.0)
+      activesupport (>= 4.2.0)
+    simplecov (0.16.1)
+      docile (~> 1.1)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     spring (2.1.0)
     sprockets (3.7.2)
       concurrent-ruby (~> 1.0)
@@ -216,9 +268,20 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+<<<<<<< HEAD
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
+=======
+    sync (0.5.0)
+    term-ansicolor (1.7.1)
+      tins (~> 1.0)
+    thor (1.0.1)
+    thread_safe (0.3.6)
+    tilt (2.0.10)
+    tins (1.25.0)
+      sync
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -233,7 +296,7 @@ GEM
       binding_of_caller (>= 0.7.2)
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
-    websocket-driver (0.6.5)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
     xpath (3.2.0)
@@ -246,7 +309,9 @@ DEPENDENCIES
   bootstrap-sass
   capybara
   chosen-rails
+  coveralls
   devise
+  factory_bot_rails
   jbuilder (~> 2.0)
   jquery-rails
   loofah (~> 2.2.1)
@@ -254,12 +319,12 @@ DEPENDENCIES
   pg (~> 0.15)
   pry-byebug
   puma (~> 3.7)
-  rails (= 5.1.5)
   rails-html-sanitizer (~> 1.0.4)
   rails_12factor
   rake (~> 11.1, >= 11.1.2)
   rspec-rails
   sass-rails (~> 5.0)
+  shoulda-matchers
   spring
   sprockets (~> 3.7.2)
   turbolinks
@@ -267,7 +332,11 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 RUBY VERSION
+<<<<<<< HEAD
    ruby 2.6.3p62
+=======
+   ruby 2.5.1p57
+>>>>>>> 68ab471aa294942844a4484fda99090f6680fe2b
 
 BUNDLED WITH
    1.17.3
